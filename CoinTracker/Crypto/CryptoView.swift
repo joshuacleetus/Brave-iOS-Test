@@ -108,6 +108,7 @@ struct CryptoView: View {
                             .leftAligned()
                             .minimumScaleFactor(0.01)
                         Spacer()
+                            .frame(width: 20)
                         Text(cryptoCoin.symbol.uppercased())
                             .font(Font.custom("SF Pro Text", size: 12))
                             .leftAligned()
