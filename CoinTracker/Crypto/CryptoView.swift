@@ -106,22 +106,17 @@ struct CryptoView: View {
                             .font(Font.custom("SF Pro Text", size: 13))
                             .fontWeight(.bold)
                             .leftAligned()
-                            .minimumScaleFactor(0.01)
-                        Spacer()
-                            .frame(width: 20)
+                            .frame(width: 150, height: 10)
                         Text(cryptoCoin.symbol.uppercased())
                             .font(Font.custom("SF Pro Text", size: 12))
                             .leftAligned()
+                            .frame(width: 150)
                     }
-                    Spacer()
                     VStack {
-                        HStack {
-                            
-                            Text(cryptoCoin.currentPriceString)
-                                .font(Font.custom("SF Pro Text", size: 13))
-                                .rightAligned()
-                        }
-                        Spacer()
+                        Text(cryptoCoin.currentPriceString)
+                            .font(Font.custom("SF Pro Text", size: 13))
+                            .rightAligned()
+                            .frame(height: 10)
                         Text(cryptoCoin.bitcoinPriceString)
                             .font(Font.custom("SF Pro Text", size: 13))
                             .rightAligned()
