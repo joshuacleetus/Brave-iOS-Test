@@ -87,6 +87,7 @@ struct CryptoView: View {
     @State var btcPrice: String?
     var body: some View {
         WithViewStore(self.store) { viewStore in
+            let _ = print(cryptoCoin.name + " - " +  cryptoCoin.currentPriceString + " - " + cryptoCoin.bitcoinPriceString)
             VStack {
                 Spacer()
                 HStack {
