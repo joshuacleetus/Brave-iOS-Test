@@ -20,7 +20,7 @@ Add components to complete the layout above. You may export the assets from the 
 Assets within the table should be shown in their USD value as well as the BTC value.
 The application should retrieve the new rates and update the layout  every 5 seconds.
 
-In swift print debug string “<currency> - <USD> - <BTC value>”
+In swift print debug string \“<currency> - <USD> - <BTC value>\”
 Push all the work done in 8 hours to the github repository.
 
 
